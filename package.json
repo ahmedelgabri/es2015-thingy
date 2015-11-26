@@ -1,0 +1,21 @@
+{
+  "name": "ES2015 thingy",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline -d --progress --colors",
+    "build": "webpack -p --progress --colors"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.1",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "css-loader": "^0.23.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "json-loader": "^0.5.4",
+    "postcss-loader": "^0.8.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}

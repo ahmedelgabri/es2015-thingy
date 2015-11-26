@@ -1,0 +1,117 @@
+/* ***************************************************************************
+ * BASE
+ * ***************************************************************************/
+html {
+  font-size: 87.5%;
+}
+
+@media screen and (min-width: 48em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: avenir, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+a, .Link {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+a:hover, .Link:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2 {
+  line-height: 1.2;
+}
+
+h1 {
+  text-transform: uppercase;
+  border-bottom: 4px double;
+}
+
+p {
+  margin: 0 0 1.5rem;
+}
+
+/* ***************************************************************************
+ * SPECIFIC
+ * ***************************************************************************/
+
+.Filters {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.FormField {
+  border: 1px solid #ddd;
+  font-size: 16px;
+  border-radius: 0;
+  font-family: sans-serif;
+  padding: .5rem 1rem;
+}
+
+.FormField:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px cornflowerblue;
+  border-color: cornflowerblue;
+}
+
+.Search {
+  -webkit-appearance: none;
+  width: calc( 100% - 50% );
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 48em) {
+  .Search {
+    width: calc( 100% - 25% );
+  }
+}
+
+.DateFilter {
+  cursor: pointer;
+}
+
+.NewsList {
+  margin-bottom: 1.5rem;
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dotted #ddd;
+}
+
+.NewsList__item {
+  cursor: pointer;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.Article__title {
+  margin-bottom: .5rem;
+}
+
+.RelatedList {
+  padding-left: 1rem;
+}
+
+.is-hidden {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  transform: scale(0) translateX(100%);
+  transition: all 0.2s linear;
+}
